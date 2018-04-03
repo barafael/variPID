@@ -1,0 +1,45 @@
+#######################################
+# Syntax Coloring Map For variPID Library
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+PIDController	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+set_enabled	KEYWORD2
+compute	KEYWORD2
+
+set_p	KEYWORD2
+set_i	KEYWORD2
+set_d	KEYWORD2
+
+get_p	KEYWORD2
+get_i	KEYWORD2
+get_d	KEYWORD2
+
+integral_reset	KEYWORD2
+set_derivative_type	KEYWORD2
+
+set_integral_limit	KEYWORD2
+set_output_limit	KEYWORD2
+
+set_filter	KEYWORD2
+set_enable_derivative_filter	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+ERROR LITERAL1
+SETPOINT LITERAL1
+FEEDBACK LITERAL1
+NONE LITERAL1
+MOVING_AVERAGE LITERAL1
+LOWPASS LITERAL1
+
