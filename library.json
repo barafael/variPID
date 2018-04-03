@@ -1,0 +1,19 @@
+{
+  "name": "variPID",
+  "keywords": "PID, controller, signal",
+  "description": "A PID controller attempts to determine the right output to move a system towards a desired state given its current state. A PID controller is tuned to a specific system by finding values for P, I and D.",
+  "url": "http://playground.arduino.cc/",
+  "include": "PIDController.hpp",
+  "authors":
+  [
+    {
+      "name": "Rafael Bachmann"
+    }
+  ],
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/barafael/variPID.git"
+  },
+  "frameworks": "arduino"
+}
