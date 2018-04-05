@@ -5,15 +5,16 @@
   "url": "http://playground.arduino.cc/",
   "include": "PIDController.hpp",
   "authors":
-  [
-    {
-      "name": "Rafael Bachmann"
-    }
-  ],
+  {
+    "name": "Rafael Bachmann",
+    "url": "https://github.com/barafael"
+  },
   "repository":
   {
     "type": "git",
     "url": "https://github.com/barafael/variPID.git"
   },
+  "license": "MIT",
+  "version": "0.0.1",
   "frameworks": "arduino"
 }
