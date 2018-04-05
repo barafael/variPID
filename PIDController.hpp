@@ -10,6 +10,12 @@
 typedef enum { ERROR, SETPOINT, FEEDBACK } derivative_type;
 typedef enum { NONE, MOVING_AVERAGE, LOWPASS } filter_type;
 
+template <typename T>
+void clamp(T &value, const T &low, const T &high) {
+    value = value < low  ? low :
+            value > high ? high : value;
+}
+
 class PIDController {
     private:
         bool enabled = true;

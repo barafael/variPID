@@ -1,10 +1,5 @@
 #include "../PIDController.hpp"
 
-#define clamp(value, low, high) \
-    ((value) = \
-    ((value) < (low)  ? (low) : \
-    ((value) > (high) ? (high) : (value))))
-
 PIDController::PIDController(float p_gain, float i_gain, float d_gain,
         float integral_limit, float output_limit)
     : p_gain(p_gain)
