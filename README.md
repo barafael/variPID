@@ -56,7 +56,20 @@ Filter should be the superclass.
 
 To use the library, copy the download to the Library directory.
 
+## Differences to Arduino-PID-Library by Brett Beauregard
+
+Brett's library should be updated in a regular interval. This is intentional and he explains why
+[here.](http://brettbeauregard.com/blog/2011/04/improving-the-beginner%E2%80%99s-pid-sample-time/)
+
+It is true that the controller becomes simpler if the sample rate is constant. Also, the mathematical
+model of integration and derivation kind of requires a constant "sample rate".
+
+However, it is an assumption that might not always be true.
+
 ## Examples
+
+I took the liberty of porting some of the examples from Brett Beauregard's
+[Arduino-PID-Library.](https://github.com/br3ttb/Arduino-PID-Library/tree/master/examples)
 
 ## Notes:
 
