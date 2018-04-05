@@ -1,1 +1,0 @@
-This is a PID library that supports irregular update intervals, derivative on error/setpoint/measurement and Lowpass/MovingAverage filters for derivative.
