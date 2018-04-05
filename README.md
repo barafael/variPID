@@ -11,12 +11,20 @@ This is important only for the I and D term calculation.
 The functions available in the library include
 
 ```c
+// Constructor with the most important PID parameters
 PIDController(float p_gain, float i_gain, float d_gain,
-        float integral_limit, float output_limit); // Constructor with the most important PID parameters
+        float integral_limit, float output_limit);
 
-void set_enabled(bool enable); // En/Disable Passthrough of setpoint (automatic vs. manual mode)
+// En/Disable Passthrough of setpoint (automatic vs. manual mode)
+void set_enabled(bool enable);
 
-float compute(const float measured, const float setpoint); // PID calculation, do this somewhat regularly
+// PID calculation, do this somewhat regularly
+float compute(const float measured, const float setpoint);
+
+// Getters and setters for PID parameters
+float get_p();
+float get_i();
+float get_d();
 
 void set_p(const float _p_gain);
 void set_i(const float _i_gain);
@@ -25,15 +33,14 @@ void set_d(const float _d_gain);
 void set_integral_limit(float limit);
 void set_output_limit(float limit);
 
-float get_p();
-float get_i();
-float get_d();
+// Resets the integral term, use sparingly, preferrably use integral_limit parameter
+void integral_reset();
 
-void integral_reset(); // Resets the integral term, use sparingly, preferrably use integral_limit parameter
+// Supported types are ERROR, SETPOINT, FEEDBACK
+void set_derivative_type(derivative_type type);
 
-void set_derivative_type(derivative_type type); // Supported types are ERROR, SETPOINT, FEEDBACK
-
-void set_filter(Filter *filter); // Supported filters right now are MOVING_AVERAGE, LOWPASS
+// Supported filters right now are MOVING_AVERAGE, LOWPASS
+void set_filter(Filter *filter);
 void set_enable_derivative_filter(bool enable);
 
 ```
