@@ -1,4 +1,4 @@
-#include "../PIDController.hpp"
+#include "PIDController.hpp"
 
 PIDController::PIDController(float p_gain, float i_gain, float d_gain,
         float integral_limit, float output_limit)
@@ -49,7 +49,7 @@ float PIDController::compute(const float measured, const float setpoint) {
             break;
 
         /* Derivative term on measurement */
-        case FEEDBACK:
+        case MEASUREMENT:
             d_term = ((measured - last_measured) / elapsed_time) * d_gain;
             break;
     }

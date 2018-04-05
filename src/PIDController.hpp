@@ -5,9 +5,9 @@
 
 #include "Arduino.h"
 
-#include "./src/Filter.hpp"
+#include "Filter.hpp"
 
-typedef enum { ERROR, SETPOINT, FEEDBACK } derivative_type;
+typedef enum { ERROR, SETPOINT, MEASUREMENT } derivative_type;
 typedef enum { NONE, MOVING_AVERAGE, LOWPASS } filter_type;
 
 template <typename T>

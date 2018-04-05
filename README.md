@@ -36,7 +36,7 @@ void set_output_limit(float limit);
 // Resets the integral term, use sparingly, preferrably use integral_limit parameter
 void integral_reset();
 
-// Supported types are ERROR, SETPOINT, FEEDBACK
+// Supported types are ERROR, SETPOINT, MEASUREMENT
 void set_derivative_type(derivative_type type);
 
 // Supported filters right now are MOVING_AVERAGE, LOWPASS
