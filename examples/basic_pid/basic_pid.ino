@@ -1,5 +1,6 @@
 /*
- * Basic PID Example
+ * Basic PID Example adapted from:
+ * https://github.com/br3ttb/Arduino-PID-Library/tree/master/examples/PID_Basic
  * Reading analog input 0 to control analog PWM output 3
 */
 
