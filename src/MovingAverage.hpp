@@ -1,5 +1,5 @@
-#ifndef MOVING_AVERAGE_H
-#define MOVING_AVERAGE_H
+#ifndef MOVING_AVERAGE_HPP_
+#define MOVING_AVERAGE_HPP_
 
 #include <stdint.h>
 #include <vector>
@@ -19,4 +19,4 @@ class MovingAverage : public Filter {
         float next(float value) override;
 };
 
-#endif // MOVING_AVERAGE_H
+#endif // MOVING_AVERAGE_HPP_

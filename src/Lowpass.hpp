@@ -1,5 +1,5 @@
-#ifndef LOW_PASS
-#define LOW_PASS
+#ifndef LOW_PASS_HPP_
+#define LOW_PASS_HPP_
 
 #include <stdint.h>
 
@@ -17,4 +17,4 @@ class Lowpass : public Filter {
         void set_beta(float beta);
 };
 
-#endif // LOW_PASS
+#endif // LOW_PASS_HPP_
