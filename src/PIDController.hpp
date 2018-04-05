@@ -1,5 +1,5 @@
-#ifndef PID_CONTROLLER_H
-#define PID_CONTROLLER_H
+#ifndef PID_CONTROLLER_HPP_
+#define PID_CONTROLLER_HPP_
 
 #include <stdint.h>
 
@@ -77,4 +77,4 @@ class PIDController {
         void set_enable_derivative_filter(bool enable);
 };
 
-#endif // PID_CONTROLLER_H
+#endif // PID_CONTROLLER_HPP_
