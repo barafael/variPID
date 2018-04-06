@@ -1,6 +1,7 @@
 /*
  * PID RelayOutput Example adapted from:
  * https://github.com/br3ttb/Arduino-PID-Library/tree/master/examples/PID_RelayOutput
+ *
  * Similar to basic example, except that the PID output determines the relay 'on-time'.
  * If the PID output is high, the relay should be on for a longer time.
  * The relay never switches faster than the window size, which is 5 seconds here.
@@ -19,9 +20,8 @@ float setpoint = 1.0;
 float output;
 
 // Specify tuning parameters
-// TODO: support non-symmetric output limits
 // (output_limit should start at 0 here)
-PIDController controller(2.0, 5.0, 1.0, 100.0, window_size);
+PIDController controller(2.0, 5.0, 1.0, 100.0, 0.0, window_size);
 
 void setup() {
     Serial.begin(9600);

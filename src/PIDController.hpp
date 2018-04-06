@@ -40,7 +40,8 @@ class PIDController {
         /* For derivative-on-measured */
         float last_measured = 0.0f;
 
-        float output_limit;
+        float output_limit_lower;
+        float output_limit_upper;
 
         uint64_t last_time = 0.0f;
 
@@ -52,6 +53,10 @@ class PIDController {
     public:
         PIDController(float p_gain, float i_gain, float d_gain,
                 float integral_limit, float output_limit);
+
+        PIDController(float p_gain, float i_gain, float d_gain,
+                float integral_limit,
+                float output_limit_lower, float output_limit_upper);
 
         /* En/Disable Passthrough of setpoint */
         void set_enabled(bool enable);
@@ -72,6 +77,7 @@ class PIDController {
 
         void set_integral_limit(float limit);
         void set_output_limit(float limit);
+        void set_output_limits(float lower, float upper);
 
         void set_filter(Filter *filter);
         void set_enable_derivative_filter(bool enable);
